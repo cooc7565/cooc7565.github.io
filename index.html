@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>About Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link href="./resources/css/my_style.css" rel="stylesheet">
+      </head>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://fedauth.colorado.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1">BuffPortal</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./form.html">Interest Form</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./mypage.html">My Page w/o Bootstrap</a>
+            </li>
+
+            </ul>
+      </nav>
+
+
+      <!-- Grey with black text -->
+      <!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./mypage_bootstrap.html">Home</a>
+            <a class="nav-link" href="https://firstbasetapes.bandcamp.com/">Music</a>
+          </li>
+        </ul>
+      </nav>-->
+
+
+
+      <div class="container">
+        <label for="label-1">
+          <h1>O'Connor, Colton -<span>Software Development Methods and Tools</span></h1>
+        </label>
+      </div>
+
+
+
+      <body>
+        <div class="container">
+        <br/>
+        <div class="card">
+            <div class="card bg-light text-dark">
+              <div class="card-body">Some interesting facts about me are; <br/>1: I have worked in radio for 5+ years<br/>2: I grew up on a farm with cows and horses<br/>3: I was the CEO of an LLC that made cassette tapes for bands accross the world</div>
+            </div>
+        </div>
+        <br/>
+
+        <a class="btn btn-outline-secondary" href="https://github.com/cooc7565" role="button">Colton's Github</a>
+        <br/>
+
+        <img value="picture" src="./resources/img/me.jpeg" class="rounded-circle" alt="image of me" style="width:500px;height:650px;">
+        <br/>
+
+
+      	<h4>My Favorite Projects</h4>
+
+      	<table class="table table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th>#</th><th>Name of the Project</th><th>Project Used</th>
+            </tr>
+          </thead>
+
+      		<tr>
+      			<th>1</th><td>Anechoic Chamber Rebuild</td><td>Assembly Language</td>
+      		</tr>
+      		<tr>
+      			<th>2</th><td>Virtual Piano</td><td>MatLab</td>
+      		</tr>
+      		<tr>
+      			<th>3</th><td>Tic-tac-toe</td><td>C</td>
+      		</tr>
+      	</table>
+
+
+        <dir class="row">
+          <h3>My Interests</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a class="btn btn-outline-secondary" href="./form.html" role="button">Add a New Interest</a>
+        </dir>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="./resources/img/music.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Music</h5>
+              <p class="card-text">I've worked in music as a sounds engineer for years now and it hasn't gotten old yet.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./resources/img/architecture.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Architecture</h5>
+              <p class="card-text">I always loved going on the architecture tours of chicago.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./resources/img/film.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Film</h5>
+            <p class="card-text">I've worked a little in film doing odd jobs for friends and have loved it. I am always looking for new movie suggestions</p>
+          </div>
+        </div>
+      </div>
+
+
+
+<script>
+$(document).ready(function(){
+
+    $(".prev-slide").click(function(){
+      $("#myCarousel").carousel('prev');
+    });
+    $(".next-slide").click(function(){
+      $("#myCarousel").carousel('next');
+    });
+});
+</script>
+  
+  <br/>
+
+  
+  <h4>My family and friends</h4>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./resources/img/kylie.jpg" alt="First slide" width="400" height="600">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./resources/img/sisters.jpg" alt="Second slide" width="400" height="600">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./resources/img/adam.jpeg" alt="Third slide" width="400" height="600">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="https://open.spotify.com/artist/62yQjNBCAPDMQzYBxEe5Qk">
+        <img class="rounded" src="./resources/img/spotify.jpg" alt="" width="144" height="60">
+      <a class="navbar-brand" href="https://firstbasetapes.bandcamp.com/">
+        <img class="rounded" src="./resources/img/bandcamp.jpg" alt="" width="100" height="60">
+    </a>
+
+    </a>
+    </nav>   
+
+      </body>
+
+    </html>
